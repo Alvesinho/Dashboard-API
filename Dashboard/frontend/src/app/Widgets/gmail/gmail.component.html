@@ -1,0 +1,25 @@
+<div>
+    <mat-card-title>Gmail</mat-card-title>
+    <form [formGroup]="signinForm" (ngSubmit)="SubmitEmail()">
+    <p>
+    <mat-form-field>
+      <input type="string" matInput placeholder="To" formControlName="To">
+    </mat-form-field>
+  </p>
+  <p>
+    <mat-form-field>
+      <input type="string" matInput placeholder="Subject" formControlName="Subject">
+    </mat-form-field>
+  </p>
+  <p>
+    <mat-form-field>
+      <input type="string" matInput placeholder="Message" formControlName="Message">
+    </mat-form-field>
+  </p>
+  <div class="button">
+    <button type="submit" mat-button>Send email</button>
+  </div>
+</form>
+<div class="button">
+  <button mat-raised-button color="warn" (click)="ClickGoogleAuth()">Google</button>
+</div>  

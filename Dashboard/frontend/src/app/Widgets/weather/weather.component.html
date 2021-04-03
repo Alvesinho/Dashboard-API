@@ -1,0 +1,16 @@
+<div>
+      <mat-card-title>Weather</mat-card-title>
+      <form [formGroup]="signinForm" (ngSubmit)="SubmitWeather()">
+      <p>
+      <mat-form-field>
+        <input type="string" matInput placeholder="City" formControlName="cityName">
+      </mat-form-field>
+    </p>
+    <div class="button">
+      <button type="submit" mat-button>Get Weather</button>
+    </div>
+    <div *ngIf="displayTemp">
+      <p>Current Temperature (°C): {{this.resultats.main.temp}}°C</p>
+      <p> Current Temperature (°F): {{this.fahrenheit}}°F</p>
+    </div>
+  </form>

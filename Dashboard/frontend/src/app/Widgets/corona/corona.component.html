@@ -1,0 +1,17 @@
+<div>
+    <mat-card-title>Coronavirus</mat-card-title>
+    <form [formGroup]="signinForm" (ngSubmit)="SubmitWeather()">
+    <p>
+    <mat-form-field>
+      <input type="string" matInput placeholder="Country" formControlName="country">
+    </mat-form-field>
+  </p>
+  <div class="button">
+    <button type="submit" mat-button>Get Stats</button>
+  </div>
+  <div *ngIf="displayTemp">
+  <p>Confirmed Cases: {{this.resultats[337].Confirmed}}</p>
+  <p>Active Cases: {{this.resultats[337].Active}}</p>
+  <p>Deaths: {{this.resultats[337].Deaths}}</p>
+  </div>
+</form>

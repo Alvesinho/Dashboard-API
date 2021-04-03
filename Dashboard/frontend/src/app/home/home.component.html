@@ -1,0 +1,1359 @@
+<div class="grid-container">
+  <h1 class="mat-h1">Dashboard</h1>
+  <mat-grid-list cols="3" rowHeight="350px">
+
+    <mat-grid-tile [colspan]="1" [rowspan]="1" *ngIf="CountWeather >= 1">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu" xPosition="before">
+              <button mat-menu-item (click)="addWeather()">Expand</button>
+              <button mat-menu-item (click)="delWeather()">Remove</button>
+            </mat-menu>
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">  
+    <app-weather></app-weather>
+    </mat-card-content>
+    </mat-card>
+    </mat-grid-tile>
+    
+<mat-grid-tile [colspan]="1" [rowspan]="1" *ngIf="CountWeather >= 2">
+  <mat-card class="dashboard-card">
+    <mat-card-header>
+      <mat-card-title>
+        <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
+          <mat-icon>more_vert</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu" xPosition="before">
+          <button mat-menu-item (click)="addWeather()">Expand</button>
+          <button mat-menu-item (click)="delWeather()">Remove</button>
+        </mat-menu>
+      </mat-card-title>
+    </mat-card-header>
+    <mat-card-content class="dashboard-card-content">  
+<app-weather></app-weather>
+</mat-card-content>
+</mat-card>
+</mat-grid-tile>
+
+<mat-grid-tile [colspan]="1" [rowspan]="1" *ngIf="CountWeather >= 3">
+  <mat-card class="dashboard-card">
+    <mat-card-header>
+      <mat-card-title>
+        <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
+          <mat-icon>more_vert</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu" xPosition="before">
+          <button mat-menu-item (click)="addWeather()">Expand</button>
+          <button mat-menu-item (click)="delWeather()">Remove</button>
+        </mat-menu>
+      </mat-card-title>
+    </mat-card-header>
+    <mat-card-content class="dashboard-card-content">  
+<app-weather></app-weather>
+</mat-card-content>
+</mat-card>
+</mat-grid-tile>
+
+<mat-grid-tile [colspan]="1" [rowspan]="1" *ngIf="CountWeather >= 4">
+  <mat-card class="dashboard-card">
+    <mat-card-header>
+      <mat-card-title>
+        <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
+          <mat-icon>more_vert</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu" xPosition="before">
+          <button mat-menu-item (click)="addWeather()">Expand</button>
+          <button mat-menu-item (click)="delWeather()">Remove</button>
+        </mat-menu>
+      </mat-card-title>
+    </mat-card-header>
+    <mat-card-content class="dashboard-card-content">  
+<app-weather></app-weather>
+</mat-card-content>
+</mat-card>
+</mat-grid-tile>
+
+<mat-grid-tile [colspan]="1" [rowspan]="1" *ngIf="CountWeather >= 5">
+  <mat-card class="dashboard-card">
+    <mat-card-header>
+      <mat-card-title>
+        <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
+          <mat-icon>more_vert</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu" xPosition="before">
+          <button mat-menu-item (click)="addWeather()">Expand</button>
+          <button mat-menu-item (click)="delWeather()">Remove</button>
+        </mat-menu>
+      </mat-card-title>
+    </mat-card-header>
+    <mat-card-content class="dashboard-card-content">  
+<app-weather></app-weather>
+</mat-card-content>
+</mat-card>
+</mat-grid-tile>
+
+<mat-grid-tile [colspan]="1" [rowspan]="1" *ngIf="CountWeather >= 6">
+  <mat-card class="dashboard-card">
+    <mat-card-header>
+      <mat-card-title>
+        <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
+          <mat-icon>more_vert</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu" xPosition="before">
+          <button mat-menu-item (click)="addWeather()">Expand</button>
+          <button mat-menu-item (click)="delWeather()">Remove</button>
+        </mat-menu>
+      </mat-card-title>
+    </mat-card-header>
+    <mat-card-content class="dashboard-card-content">
+<app-weather></app-weather>
+</mat-card-content>
+</mat-card>
+</mat-grid-tile>
+
+<mat-grid-tile [colspan]="1" [rowspan]="1" *ngIf="CountWeather >= 7">
+  <mat-card class="dashboard-card">
+    <mat-card-header>
+      <mat-card-title>
+        <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
+          <mat-icon>more_vert</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu" xPosition="before">
+          <button mat-menu-item (click)="addWeather()">Expand</button>
+          <button mat-menu-item (click)="delWeather()">Remove</button>
+        </mat-menu>
+      </mat-card-title>
+    </mat-card-header>
+    <mat-card-content class="dashboard-card-content">
+<app-weather></app-weather>
+</mat-card-content>
+</mat-card>
+</mat-grid-tile>
+
+<mat-grid-tile [colspan]="1" [rowspan]="1" *ngIf="CountWeather >= 8">
+  <mat-card class="dashboard-card">
+    <mat-card-header>
+      <mat-card-title>
+        <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
+          <mat-icon>more_vert</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu" xPosition="before">
+          <button mat-menu-item (click)="addWeather()">Expand</button>
+          <button mat-menu-item (click)="delWeather()">Remove</button>
+        </mat-menu>
+      </mat-card-title>
+    </mat-card-header>
+    <mat-card-content class="dashboard-card-content">
+<app-weather></app-weather>
+</mat-card-content>
+</mat-card>
+</mat-grid-tile>
+
+<mat-grid-tile [colspan]="1" [rowspan]="1" *ngIf="CountWeather >= 9">
+  <mat-card class="dashboard-card">
+    <mat-card-header>
+      <mat-card-title>
+        <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
+          <mat-icon>more_vert</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu" xPosition="before">
+          <button mat-menu-item (click)="addWeather()">Expand</button>
+          <button mat-menu-item (click)="delWeather()">Remove</button>
+        </mat-menu>
+      </mat-card-title>
+    </mat-card-header>
+    <mat-card-content class="dashboard-card-content">
+<app-weather></app-weather>
+</mat-card-content>
+</mat-card>
+</mat-grid-tile>
+
+<mat-grid-tile [colspan]="1" [rowspan]="1" *ngIf="CountWeather >= 10">
+  <mat-card class="dashboard-card">
+    <mat-card-header>
+      <mat-card-title>
+        <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
+          <mat-icon>more_vert</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu" xPosition="before">
+          <button mat-menu-item (click)="addWeather()">Expand</button>
+          <button mat-menu-item (click)="delWeather()">Remove</button>
+        </mat-menu>
+      </mat-card-title>
+    </mat-card-header>
+    <mat-card-content class="dashboard-card-content">
+<app-weather></app-weather>
+</mat-card-content>
+</mat-card>
+</mat-grid-tile>
+
+<mat-grid-tile [colspan]="2" [rowspan]="1" *ngIf="CountStock >= 1">
+  <mat-card class="dashboard-card">
+    <mat-card-header>
+      <mat-card-title>
+        <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu2" aria-label="Toggle menu">
+          <mat-icon>more_vert</mat-icon>
+        </button>
+        <mat-menu #menu2="matMenu" xPosition="before">
+          <button mat-menu-item (click)="addStock()">Expand</button>
+          <button mat-menu-item (click)="delStock()">Remove</button>
+        </mat-menu>
+      </mat-card-title>
+    </mat-card-header>
+    <mat-card-content class="dashboard-card-content">  
+      <app-trade></app-trade>
+    </mat-card-content>
+</mat-card>
+</mat-grid-tile>
+
+<mat-grid-tile [colspan]="2" [rowspan]="1" *ngIf="CountStock >= 2">
+  <mat-card class="dashboard-card">
+    <mat-card-header>
+      <mat-card-title>
+        <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu2" aria-label="Toggle menu">
+          <mat-icon>more_vert</mat-icon>
+        </button>
+        <mat-menu #menu2="matMenu" xPosition="before">
+          <button mat-menu-item (click)="addStock()">Expand</button>
+          <button mat-menu-item (click)="delStock()">Remove</button>
+        </mat-menu>
+      </mat-card-title>
+    </mat-card-header>
+    <mat-card-content class="dashboard-card-content">  
+      <app-trade></app-trade>
+    </mat-card-content>
+</mat-card>
+</mat-grid-tile>
+
+<mat-grid-tile [colspan]="2" [rowspan]="1" *ngIf="CountStock >= 3">
+  <mat-card class="dashboard-card">
+    <mat-card-header>
+      <mat-card-title>
+        <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu2" aria-label="Toggle menu">
+          <mat-icon>more_vert</mat-icon>
+        </button>
+        <mat-menu #menu2="matMenu" xPosition="before">
+          <button mat-menu-item (click)="addStock()">Expand</button>
+          <button mat-menu-item (click)="delStock()">Remove</button>
+        </mat-menu>
+      </mat-card-title>
+    </mat-card-header>
+    <mat-card-content class="dashboard-card-content">  
+      <app-trade></app-trade>
+    </mat-card-content>
+</mat-card>
+</mat-grid-tile>
+
+<mat-grid-tile [colspan]="2" [rowspan]="1" *ngIf="CountStock >= 4">
+  <mat-card class="dashboard-card">
+    <mat-card-header>
+      <mat-card-title>
+        <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu2" aria-label="Toggle menu">
+          <mat-icon>more_vert</mat-icon>
+        </button>
+        <mat-menu #menu2="matMenu" xPosition="before">
+          <button mat-menu-item (click)="addStock()">Expand</button>
+          <button mat-menu-item (click)="delStock()">Remove</button>
+        </mat-menu>
+      </mat-card-title>
+    </mat-card-header>
+    <mat-card-content class="dashboard-card-content">  
+      <app-trade></app-trade>
+    </mat-card-content>
+</mat-card>
+</mat-grid-tile>
+
+<mat-grid-tile [colspan]="2" [rowspan]="1" *ngIf="CountStock >= 5">
+  <mat-card class="dashboard-card">
+    <mat-card-header>
+      <mat-card-title>
+        <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu2" aria-label="Toggle menu">
+          <mat-icon>more_vert</mat-icon>
+        </button>
+        <mat-menu #menu2="matMenu" xPosition="before">
+          <button mat-menu-item (click)="addStock()">Expand</button>
+          <button mat-menu-item (click)="delStock()">Remove</button>
+        </mat-menu>
+      </mat-card-title>
+    </mat-card-header>
+    <mat-card-content class="dashboard-card-content">  
+      <app-trade></app-trade>
+    </mat-card-content>
+</mat-card>
+</mat-grid-tile>
+
+<mat-grid-tile [colspan]="2" [rowspan]="1" *ngIf="CountStock >= 6">
+  <mat-card class="dashboard-card">
+    <mat-card-header>
+      <mat-card-title>
+        <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu2" aria-label="Toggle menu">
+          <mat-icon>more_vert</mat-icon>
+        </button>
+        <mat-menu #menu2="matMenu" xPosition="before">
+          <button mat-menu-item (click)="addStock()">Expand</button>
+          <button mat-menu-item (click)="delStock()">Remove</button>
+        </mat-menu>
+      </mat-card-title>
+    </mat-card-header>
+    <mat-card-content class="dashboard-card-content">
+      <app-trade></app-trade>
+    </mat-card-content>
+</mat-card>
+</mat-grid-tile>
+
+<mat-grid-tile [colspan]="2" [rowspan]="1" *ngIf="CountStock >= 7">
+  <mat-card class="dashboard-card">
+    <mat-card-header>
+      <mat-card-title>
+        <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu2" aria-label="Toggle menu">
+          <mat-icon>more_vert</mat-icon>
+        </button>
+        <mat-menu #menu2="matMenu" xPosition="before">
+          <button mat-menu-item (click)="addStock()">Expand</button>
+          <button mat-menu-item (click)="delStock()">Remove</button>
+        </mat-menu>
+      </mat-card-title>
+    </mat-card-header>
+    <mat-card-content class="dashboard-card-content">
+      <app-trade></app-trade>
+    </mat-card-content>
+</mat-card>
+</mat-grid-tile>
+
+<mat-grid-tile [colspan]="2" [rowspan]="1" *ngIf="CountStock >= 8">
+  <mat-card class="dashboard-card">
+    <mat-card-header>
+      <mat-card-title>
+        <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu2" aria-label="Toggle menu">
+          <mat-icon>more_vert</mat-icon>
+        </button>
+        <mat-menu #menu2="matMenu" xPosition="before">
+          <button mat-menu-item (click)="addStock()">Expand</button>
+          <button mat-menu-item (click)="delStock()">Remove</button>
+        </mat-menu>
+      </mat-card-title>
+    </mat-card-header>
+    <mat-card-content class="dashboard-card-content">
+      <app-trade></app-trade>
+    </mat-card-content>
+</mat-card>
+</mat-grid-tile>
+
+<mat-grid-tile [colspan]="2" [rowspan]="1" *ngIf="CountStock >= 9">
+  <mat-card class="dashboard-card">
+    <mat-card-header>
+      <mat-card-title>
+        <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu2" aria-label="Toggle menu">
+          <mat-icon>more_vert</mat-icon>
+        </button>
+        <mat-menu #menu2="matMenu" xPosition="before">
+          <button mat-menu-item (click)="addStock()">Expand</button>
+          <button mat-menu-item (click)="delStock()">Remove</button>
+        </mat-menu>
+      </mat-card-title>
+    </mat-card-header>
+    <mat-card-content class="dashboard-card-content">
+      <app-trade></app-trade>
+    </mat-card-content>
+</mat-card>
+</mat-grid-tile>
+
+<mat-grid-tile [colspan]="2" [rowspan]="1" *ngIf="CountStock >= 10">
+  <mat-card class="dashboard-card">
+    <mat-card-header>
+      <mat-card-title>
+        <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu2" aria-label="Toggle menu">
+          <mat-icon>more_vert</mat-icon>
+        </button>
+        <mat-menu #menu2="matMenu" xPosition="before">
+          <button mat-menu-item (click)="addStock()">Expand</button>
+          <button mat-menu-item (click)="delStock()">Remove</button>
+        </mat-menu>
+      </mat-card-title>
+    </mat-card-header>
+    <mat-card-content class="dashboard-card-content">
+      <app-trade></app-trade>
+    </mat-card-content>
+</mat-card>
+</mat-grid-tile>
+
+    <mat-grid-tile [colspan]="1" [rowspan]="2" *ngIf="CountFoot >= 1">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu3" aria-label="Toggle menu">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu3="matMenu" xPosition="before">
+              <button mat-menu-item (click)="addsoccer()">Expand</button>
+              <button mat-menu-item (click)="delsoccer()">Remove</button>
+                </mat-menu>
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">
+          <app-soccer></app-soccer>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+
+    <mat-grid-tile [colspan]="1" [rowspan]="2" *ngIf="CountFoot >= 2">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu3" aria-label="Toggle menu">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu3="matMenu" xPosition="before">
+              <button mat-menu-item (click)="addsoccer()">Expand</button>
+              <button mat-menu-item (click)="delsoccer()">Remove</button>
+                </mat-menu>
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">
+          <app-soccer></app-soccer>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+
+    <mat-grid-tile [colspan]="1" [rowspan]="2" *ngIf="CountFoot >= 3">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu3" aria-label="Toggle menu">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu3="matMenu" xPosition="before">
+              <button mat-menu-item (click)="addsoccer()">Expand</button>
+              <button mat-menu-item (click)="delsoccer()">Remove</button>
+                </mat-menu>
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">
+          <app-soccer></app-soccer>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+
+    <mat-grid-tile [colspan]="1" [rowspan]="2" *ngIf="CountFoot >= 4">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu3" aria-label="Toggle menu">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu3="matMenu" xPosition="before">
+              <button mat-menu-item (click)="addsoccer()">Expand</button>
+              <button mat-menu-item (click)="delsoccer()">Remove</button>
+                </mat-menu>
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">
+          <app-soccer></app-soccer>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+
+
+    <mat-grid-tile [colspan]="1" [rowspan]="2" *ngIf="CountFoot >= 5">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu3" aria-label="Toggle menu">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu3="matMenu" xPosition="before">
+              <button mat-menu-item (click)="addsoccer()">Expand</button>
+              <button mat-menu-item (click)="delsoccer()">Remove</button>
+                </mat-menu>
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">
+          <app-soccer></app-soccer>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+
+<mat-grid-tile [colspan]="1" [rowspan]="2" *ngIf="CountFoot >= 6">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu3" aria-label="Toggle menu">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu3="matMenu" xPosition="before">
+              <button mat-menu-item (click)="addsoccer()">Expand</button>
+              <button mat-menu-item (click)="delsoccer()">Remove</button>
+                </mat-menu>
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">
+          <app-soccer></app-soccer>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+
+<mat-grid-tile [colspan]="1" [rowspan]="2" *ngIf="CountFoot >= 7">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu3" aria-label="Toggle menu">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu3="matMenu" xPosition="before">
+              <button mat-menu-item (click)="addsoccer()">Expand</button>
+              <button mat-menu-item (click)="delsoccer()">Remove</button>
+                </mat-menu>
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">
+          <app-soccer></app-soccer>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+
+<mat-grid-tile [colspan]="1" [rowspan]="2" *ngIf="CountFoot >= 8">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu3" aria-label="Toggle menu">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu3="matMenu" xPosition="before">
+              <button mat-menu-item (click)="addsoccer()">Expand</button>
+              <button mat-menu-item (click)="delsoccer()">Remove</button>
+                </mat-menu>
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">
+          <app-soccer></app-soccer>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+
+<mat-grid-tile [colspan]="1" [rowspan]="2" *ngIf="CountFoot >= 9">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu3" aria-label="Toggle menu">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu3="matMenu" xPosition="before">
+              <button mat-menu-item (click)="addsoccer()">Expand</button>
+              <button mat-menu-item (click)="delsoccer()">Remove</button>
+                </mat-menu>
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">
+          <app-soccer></app-soccer>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+
+<mat-grid-tile [colspan]="1" [rowspan]="2" *ngIf="CountFoot >= 10">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu3" aria-label="Toggle menu">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu3="matMenu" xPosition="before">
+              <button mat-menu-item (click)="addsoccer()">Expand</button>
+              <button mat-menu-item (click)="delsoccer()">Remove</button>
+                </mat-menu>
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">
+          <app-soccer></app-soccer>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+
+    
+    <mat-grid-tile [colspan]="1" [rowspan]="1" *ngIf="CountCorona >= 1">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu4" aria-label="Toggle menu">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu4="matMenu" xPosition="before">
+              <button mat-menu-item (click)="addCorona()">Expand</button>
+              <button mat-menu-item (click)="delCorona()">Remove</button>
+            </mat-menu>
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">
+          <app-corona></app-corona>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+
+    <mat-grid-tile [colspan]="1" [rowspan]="1" *ngIf="CountCorona >= 2">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu4" aria-label="Toggle menu">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu4="matMenu" xPosition="before">
+              <button mat-menu-item (click)="addCorona()">Expand</button>
+              <button mat-menu-item (click)="delCorona()">Remove</button>
+            </mat-menu>
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">
+          <app-corona></app-corona>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+
+    <mat-grid-tile [colspan]="1" [rowspan]="1" *ngIf="CountCorona >= 3">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu4" aria-label="Toggle menu">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu4="matMenu" xPosition="before">
+              <button mat-menu-item (click)="addCorona()">Expand</button>
+              <button mat-menu-item (click)="delCorona()">Remove</button>
+            </mat-menu>
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">
+          <app-corona></app-corona>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+
+    <mat-grid-tile [colspan]="1" [rowspan]="1" *ngIf="CountCorona >= 4">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu4" aria-label="Toggle menu">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu4="matMenu" xPosition="before">
+              <button mat-menu-item (click)="addCorona()">Expand</button>
+              <button mat-menu-item (click)="delCorona()">Remove</button>
+            </mat-menu>
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">
+          <app-corona></app-corona>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+
+
+    <mat-grid-tile [colspan]="1" [rowspan]="1" *ngIf="CountCorona >= 5">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu4" aria-label="Toggle menu">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu4="matMenu" xPosition="before">
+              <button mat-menu-item (click)="addCorona()">Expand</button>
+              <button mat-menu-item (click)="delCorona()">Remove</button>
+            </mat-menu>
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">
+          <app-corona></app-corona>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+
+    <mat-grid-tile [colspan]="1" [rowspan]="1" *ngIf="CountCorona >= 6">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu4" aria-label="Toggle menu">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu4="matMenu" xPosition="before">
+              <button mat-menu-item (click)="addCorona()">Expand</button>
+              <button mat-menu-item (click)="delCorona()">Remove</button>
+            </mat-menu>
+          </mat-card-title>
+        </mat-card-header>
+	<mat-card-content class="dashboard-card-content">
+          <app-corona></app-corona>
+	</mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+
+    <mat-grid-tile [colspan]="1" [rowspan]="1" *ngIf="CountCorona >= 7">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu4" aria-label="Toggle menu">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu4="matMenu" xPosition="before">
+              <button mat-menu-item (click)="addCorona()">Expand</button>
+              <button mat-menu-item (click)="delCorona()">Remove</button>
+            </mat-menu>
+          </mat-card-title>
+        </mat-card-header>
+	<mat-card-content class="dashboard-card-content">
+          <app-corona></app-corona>
+	</mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+
+    <mat-grid-tile [colspan]="1" [rowspan]="1" *ngIf="CountCorona >= 8">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu4" aria-label="Toggle menu">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu4="matMenu" xPosition="before">
+              <button mat-menu-item (click)="addCorona()">Expand</button>
+              <button mat-menu-item (click)="delCorona()">Remove</button>
+            </mat-menu>
+          </mat-card-title>
+        </mat-card-header>
+	<mat-card-content class="dashboard-card-content">
+          <app-corona></app-corona>
+	</mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+
+    <mat-grid-tile [colspan]="1" [rowspan]="1" *ngIf="CountCorona >= 9">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu4" aria-label="Toggle menu">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu4="matMenu" xPosition="before">
+              <button mat-menu-item (click)="addCorona()">Expand</button>
+              <button mat-menu-item (click)="delCorona()">Remove</button>
+            </mat-menu>
+          </mat-card-title>
+        </mat-card-header>
+	<mat-card-content class="dashboard-card-content">
+          <app-corona></app-corona>
+	</mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+
+    <mat-grid-tile [colspan]="1" [rowspan]="1" *ngIf="CountCorona >= 10">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu4" aria-label="Toggle menu">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu4="matMenu" xPosition="before">
+              <button mat-menu-item (click)="addCorona()">Expand</button>
+              <button mat-menu-item (click)="delCorona()">Remove</button>
+            </mat-menu>
+          </mat-card-title>
+        </mat-card-header>
+	<mat-card-content class="dashboard-card-content">
+          <app-corona></app-corona>
+	</mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+
+    <mat-grid-tile [colspan]="1" [rowspan]="1" *ngIf="CountNASA >= 1">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu5" aria-label="Toggle menu">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu5="matMenu" xPosition="before">
+              <button mat-menu-item (click)="addNASA()">Expand</button>
+              <button mat-menu-item (click)="delNASA()">Remove</button>
+            </mat-menu>
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">
+          <app-nasa></app-nasa>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+
+
+    <mat-grid-tile [colspan]="1" [rowspan]="1" *ngIf="CountNASA >= 2">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu5" aria-label="Toggle menu">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu5="matMenu" xPosition="before">
+              <button mat-menu-item (click)="addNASA()">Expand</button>
+              <button mat-menu-item (click)="delNASA()">Remove</button>
+            </mat-menu>
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">
+          <app-nasa></app-nasa>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+
+    <mat-grid-tile [colspan]="1" [rowspan]="1" *ngIf="CountNASA >= 3">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu5" aria-label="Toggle menu">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu5="matMenu" xPosition="before">
+              <button mat-menu-item (click)="addNASA()">Expand</button>
+              <button mat-menu-item (click)="delNASA()">Remove</button>
+            </mat-menu>
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">
+          <app-nasa></app-nasa>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+
+    <mat-grid-tile [colspan]="1" [rowspan]="1" *ngIf="CountNASA >= 4">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu5" aria-label="Toggle menu">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu5="matMenu" xPosition="before">
+              <button mat-menu-item (click)="addNASA()">Expand</button>
+              <button mat-menu-item (click)="delNASA()">Remove</button>
+            </mat-menu>
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">
+          <app-nasa></app-nasa>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+
+
+    <mat-grid-tile [colspan]="1" [rowspan]="1" *ngIf="CountNASA >= 5">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu5" aria-label="Toggle menu">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu5="matMenu" xPosition="before">
+              <button mat-menu-item (click)="addNASA()">Expand</button>
+              <button mat-menu-item (click)="delNASA()">Remove</button>
+            </mat-menu>
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">
+          <app-nasa></app-nasa>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+
+<mat-grid-tile [colspan]="1" [rowspan]="1" *ngIf="CountNASA >= 6">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu5" aria-label="Toggle menu">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu5="matMenu" xPosition="before">
+              <button mat-menu-item (click)="addNASA()">Expand</button>
+              <button mat-menu-item (click)="delNASA()">Remove</button>
+            </mat-menu>
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">
+          <app-nasa></app-nasa>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+
+<mat-grid-tile [colspan]="1" [rowspan]="1" *ngIf="CountNASA >= 7">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu5" aria-label="Toggle menu">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu5="matMenu" xPosition="before">
+              <button mat-menu-item (click)="addNASA()">Expand</button>
+              <button mat-menu-item (click)="delNASA()">Remove</button>
+            </mat-menu>
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">
+          <app-nasa></app-nasa>
+        </mat-card-content>
+      </mat-card>
+</mat-grid-tile>
+
+<mat-grid-tile [colspan]="1" [rowspan]="1" *ngIf="CountNASA >= 8">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu5" aria-label="Toggle menu">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu5="matMenu" xPosition="before">
+              <button mat-menu-item (click)="addNASA()">Expand</button>
+              <button mat-menu-item (click)="delNASA()">Remove</button>
+            </mat-menu>
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">
+          <app-nasa></app-nasa>
+        </mat-card-content>
+      </mat-card>
+</mat-grid-tile>
+
+<mat-grid-tile [colspan]="1" [rowspan]="1" *ngIf="CountNASA >= 9">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu5" aria-label="Toggle menu">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu5="matMenu" xPosition="before">
+              <button mat-menu-item (click)="addNASA()">Expand</button>
+              <button mat-menu-item (click)="delNASA()">Remove</button>
+            </mat-menu>
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">
+          <app-nasa></app-nasa>
+        </mat-card-content>
+      </mat-card>
+</mat-grid-tile>
+
+<mat-grid-tile [colspan]="1" [rowspan]="1" *ngIf="CountNASA >= 10">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu5" aria-label="Toggle menu">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu5="matMenu" xPosition="before">
+              <button mat-menu-item (click)="addNASA()">Expand</button>
+              <button mat-menu-item (click)="delNASA()">Remove</button>
+            </mat-menu>
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">
+          <app-nasa></app-nasa>
+        </mat-card-content>
+      </mat-card>
+</mat-grid-tile>
+
+    <mat-grid-tile [colspan]="2" [rowspan]="1" *ngIf="Counthth >= 1">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu6" aria-label="Toggle menu">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu6="matMenu" xPosition="before">
+              <button mat-menu-item (click)="addhth()">Expand</button>
+              <button mat-menu-item (click)="delhth()">Remove</button>
+            </mat-menu>
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">
+          <app-soccerhth></app-soccerhth>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+
+    <mat-grid-tile [colspan]="2" [rowspan]="1" *ngIf="Counthth >= 2">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu6" aria-label="Toggle menu">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu6="matMenu" xPosition="before">
+              <button mat-menu-item (click)="addhth()">Expand</button>
+              <button mat-menu-item (click)="delhth()">Remove</button>
+            </mat-menu>
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">
+          <app-soccerhth></app-soccerhth>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+
+    <mat-grid-tile [colspan]="2" [rowspan]="1" *ngIf="Counthth >= 3">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu6" aria-label="Toggle menu">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu6="matMenu" xPosition="before">
+              <button mat-menu-item (click)="addhth()">Expand</button>
+              <button mat-menu-item (click)="delhth()">Remove</button>
+            </mat-menu>
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">
+          <app-soccerhth></app-soccerhth>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+
+    <mat-grid-tile [colspan]="2" [rowspan]="1" *ngIf="Counthth >= 4">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu6" aria-label="Toggle menu">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu6="matMenu" xPosition="before">
+              <button mat-menu-item (click)="addhth()">Expand</button>
+              <button mat-menu-item (click)="delhth()">Remove</button>
+            </mat-menu>
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">
+          <app-soccerhth></app-soccerhth>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+
+    <mat-grid-tile [colspan]="2" [rowspan]="1" *ngIf="Counthth >= 5">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu6" aria-label="Toggle menu">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu6="matMenu" xPosition="before">
+              <button mat-menu-item (click)="addhth()">Expand</button>
+              <button mat-menu-item (click)="delhth()">Remove</button>
+            </mat-menu>
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">
+          <app-soccerhth></app-soccerhth>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+
+ <mat-grid-tile [colspan]="2" [rowspan]="1" *ngIf="Counthth >= 6">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu6" aria-label="Toggle menu">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu6="matMenu" xPosition="before">
+              <button mat-menu-item (click)="addhth()">Expand</button>
+              <button mat-menu-item (click)="delhth()">Remove</button>
+            </mat-menu>
+          </mat-card-title>
+	</mat-card-header>
+        <mat-card-content class="dashboard-card-content">
+          <app-soccerhth></app-soccerhth>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+
+  <mat-grid-tile [colspan]="2" [rowspan]="1" *ngIf="Counthth >= 7">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu6" aria-label="Toggle menu">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu6="matMenu" xPosition="before">
+              <button mat-menu-item (click)="addhth()">Expand</button>
+              <button mat-menu-item (click)="delhth()">Remove</button>
+            </mat-menu>
+          </mat-card-title>
+	</mat-card-header>
+        <mat-card-content class="dashboard-card-content">
+          <app-soccerhth></app-soccerhth>
+        </mat-card-content>
+      </mat-card>
+  </mat-grid-tile>
+
+   <mat-grid-tile [colspan]="2" [rowspan]="1" *ngIf="Counthth >= 8">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu6" aria-label="Toggle menu">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu6="matMenu" xPosition="before">
+              <button mat-menu-item (click)="addhth()">Expand</button>
+              <button mat-menu-item (click)="delhth()">Remove</button>
+            </mat-menu>
+          </mat-card-title>
+	</mat-card-header>
+        <mat-card-content class="dashboard-card-content">
+          <app-soccerhth></app-soccerhth>
+        </mat-card-content>
+      </mat-card>
+   </mat-grid-tile>
+
+    <mat-grid-tile [colspan]="2" [rowspan]="1" *ngIf="Counthth >= 9">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu6" aria-label="Toggle menu">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu6="matMenu" xPosition="before">
+              <button mat-menu-item (click)="addhth()">Expand</button>
+              <button mat-menu-item (click)="delhth()">Remove</button>
+            </mat-menu>
+          </mat-card-title>
+	</mat-card-header>
+        <mat-card-content class="dashboard-card-content">
+          <app-soccerhth></app-soccerhth>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+
+     <mat-grid-tile [colspan]="2" [rowspan]="1" *ngIf="Counthth >= 10">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu6" aria-label="Toggle menu">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu6="matMenu" xPosition="before">
+              <button mat-menu-item (click)="addhth()">Expand</button>
+              <button mat-menu-item (click)="delhth()">Remove</button>
+            </mat-menu>
+          </mat-card-title>
+	</mat-card-header>
+        <mat-card-content class="dashboard-card-content">
+          <app-soccerhth></app-soccerhth>
+        </mat-card-content>
+      </mat-card>
+     </mat-grid-tile>
+
+     <mat-grid-tile [colspan]="1" [rowspan]="1" *ngIf="CountGmail >= 1">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu" xPosition="before">
+              <button mat-menu-item (click)="addGmail()">Expand</button>
+              <button mat-menu-item (click)="delGmail()">Remove</button>
+            </mat-menu>
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">  
+    <app-gmail></app-gmail>
+    </mat-card-content>
+    </mat-card>
+    </mat-grid-tile>
+
+    <mat-grid-tile [colspan]="1" [rowspan]="1" *ngIf="CountGmail >= 2">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu" xPosition="before">
+              <button mat-menu-item (click)="addGmail()">Expand</button>
+              <button mat-menu-item (click)="delGmail()">Remove</button>
+            </mat-menu>
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">  
+    <app-gmail></app-gmail>
+    </mat-card-content>
+    </mat-card>
+    </mat-grid-tile>
+
+    <mat-grid-tile [colspan]="1" [rowspan]="1" *ngIf="CountGmail >= 3">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu" xPosition="before">
+              <button mat-menu-item (click)="addGmail()">Expand</button>
+              <button mat-menu-item (click)="delGmail()">Remove</button>
+            </mat-menu>
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">  
+    <app-gmail></app-gmail>
+    </mat-card-content>
+    </mat-card>
+    </mat-grid-tile>
+
+    <mat-grid-tile [colspan]="1" [rowspan]="1" *ngIf="CountGmail >= 4">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu" xPosition="before">
+              <button mat-menu-item (click)="addGmail()">Expand</button>
+              <button mat-menu-item (click)="delGmail()">Remove</button>
+            </mat-menu>
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">  
+    <app-gmail></app-gmail>
+    </mat-card-content>
+    </mat-card>
+    </mat-grid-tile>
+
+    <mat-grid-tile [colspan]="1" [rowspan]="1" *ngIf="CountGmail >= 5">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu" xPosition="before">
+              <button mat-menu-item (click)="addGmail()">Expand</button>
+              <button mat-menu-item (click)="delGmail()">Remove</button>
+            </mat-menu>
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">  
+    <app-gmail></app-gmail>
+    </mat-card-content>
+    </mat-card>
+    </mat-grid-tile>
+
+    <mat-grid-tile [colspan]="1" [rowspan]="1" *ngIf="CountGmail >= 6">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu" xPosition="before">
+              <button mat-menu-item (click)="addGmail()">Expand</button>
+              <button mat-menu-item (click)="delGmail()">Remove</button>
+            </mat-menu>
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">  
+    <app-gmail></app-gmail>
+    </mat-card-content>
+    </mat-card>
+    </mat-grid-tile>
+
+    <mat-grid-tile [colspan]="1" [rowspan]="1" *ngIf="CountGmail >= 7">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu" xPosition="before">
+              <button mat-menu-item (click)="addGmail()">Expand</button>
+              <button mat-menu-item (click)="delGmail()">Remove</button>
+            </mat-menu>
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">  
+    <app-gmail></app-gmail>
+    </mat-card-content>
+    </mat-card>
+    </mat-grid-tile>
+
+    <mat-grid-tile [colspan]="1" [rowspan]="1" *ngIf="CountGmail >= 8">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu" xPosition="before">
+              <button mat-menu-item (click)="addGmail()">Expand</button>
+              <button mat-menu-item (click)="delGmail()">Remove</button>
+            </mat-menu>
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">  
+    <app-gmail></app-gmail>
+    </mat-card-content>
+    </mat-card>
+    </mat-grid-tile>
+
+    <mat-grid-tile [colspan]="1" [rowspan]="1" *ngIf="CountGmail >= 9">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu" xPosition="before">
+              <button mat-menu-item (click)="addGmail()">Expand</button>
+              <button mat-menu-item (click)="delGmail()">Remove</button>
+            </mat-menu>
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">  
+    <app-gmail></app-gmail>
+    </mat-card-content>
+    </mat-card>
+    </mat-grid-tile>
+
+    <mat-grid-tile [colspan]="1" [rowspan]="1" *ngIf="CountGmail >= 10">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu" xPosition="before">
+              <button mat-menu-item (click)="addGmail()">Expand</button>
+              <button mat-menu-item (click)="delGmail()">Remove</button>
+            </mat-menu>
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">  
+    <app-gmail></app-gmail>
+    </mat-card-content>
+    </mat-card>
+    </mat-grid-tile>
+
+    <mat-grid-tile [colspan]="3" [rowspan]="1">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            <button (click)="addWeather()" mat-button>Weather</button>
+            <button (click)="addStock()" mat-button>Stock Exchange</button>
+            <button (click)="addsoccer()" mat-button>Soccer</button>
+            <button (click)="addCorona()" mat-button>Corona</button>
+            <button (click)="addNASA()" mat-button>Nasa</button>
+            <button (click)="addhth()" mat-button>Soocer Head To Head</button>
+            <button (click)="addGmail()" mat-button>Gmail</button>        
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">  
+    </mat-card-content>
+    </mat-card>
+    </mat-grid-tile>
+
+  </mat-grid-list>
+</div>

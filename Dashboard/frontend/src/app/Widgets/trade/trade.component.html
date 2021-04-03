@@ -1,0 +1,49 @@
+<div>
+    <mat-card-title>Stock Exchange</mat-card-title>
+    <form [formGroup]="signinForm" (ngSubmit)="SubmitFX()">
+    <p>
+    <mat-form-field>
+      <input type="string" matInput placeholder="Action" formControlName="DEVISE1">
+    </mat-form-field>
+    </p>
+  <div class="button">
+    <button type="submit" mat-button>Get Value</button>
+  </div>
+  <div *ngIf="displayTemp">
+    <table class="table table-striped">
+      <thead>
+      <tr>
+        <th style="width: 15%">
+          Name
+        </th>
+          <th style="width: 15%">
+              Open
+          </th>
+          <th style="width: 15%">
+              High
+          </th>
+          <th style="width: 15%">
+            Low
+        </th>
+        <th style="width: 15%">
+          Close
+        </th>
+        <th style="width: 15%">
+          Volume
+        </th>
+      </tr>
+      </thead>
+      <tbody>     
+      <tr>
+        <td>{{this.resultats.data[0].symbol}}</td>
+          <td>{{this.resultats.data[0].open}}</td>
+          <td>{{this.resultats.data[0].high}}</td>
+          <td>{{this.resultats.data[0].low}}</td>
+          <td>{{this.resultats.data[0].close}}</td>
+          <td>{{this.resultats.data[0].volume}}</td>
+
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</form>

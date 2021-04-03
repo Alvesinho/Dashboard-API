@@ -1,0 +1,23 @@
+<div>
+    <mat-card>
+      <mat-card-title>Inscription</mat-card-title>
+      <form [formGroup]="signinForm" (ngSubmit)="onSubmitSigninForm()">
+      <p>
+      <mat-form-field>
+        <input type="email" matInput placeholder="Email" formControlName="email">
+      </mat-form-field>
+    </p>
+    <p>
+      <mat-form-field>
+        <input type="password" matInput placeholder="Password" formControlName="password">
+      </mat-form-field>
+    </p>
+    <div class="button">
+      <button type="submit" mat-button>Inscription</button>
+    </div>
+    
+    </form>
+    <a mat-raised-button routerLink="/login">Déjà un compte ?</a>
+    
+    </mat-card>
+</div>

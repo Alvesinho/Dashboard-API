@@ -1,0 +1,16 @@
+<div>
+    <mat-card-title>NASA</mat-card-title>
+    <form [formGroup]="signinForm" (ngSubmit)="SubmitWeather()">
+    <p>
+    <mat-form-field>
+      <input type="string" matInput placeholder="Camera" formControlName="NASA">
+    </mat-form-field>
+  </p>
+  <div class="button">
+    <button type="submit" mat-button>Get Mars Picture</button>
+  </div>
+  <div *ngIf="displayTemp">
+    <img src={{this.resultats.photos[0].img_src}}
+    width="300" height="150">
+  </div>
+</form>

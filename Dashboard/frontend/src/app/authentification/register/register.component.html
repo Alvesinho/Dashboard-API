@@ -1,0 +1,26 @@
+<div>
+<mat-card>
+  <mat-card-title>Connexion</mat-card-title>
+  <form [formGroup]="signinForm" (ngSubmit)="onSubmitSigninForm()">
+  <p>
+  <mat-form-field>
+    <input type="email" matInput placeholder="Email" formControlName="email">
+  </mat-form-field>
+</p>
+<p>
+  <mat-form-field>
+    <input type="password" matInput placeholder="Password" formControlName="password">
+  </mat-form-field>
+</p>
+<div class="button">
+  <button type="submit" mat-button>Connexion</button>
+</div>
+
+</form>
+<a mat-raised-button routerLink="/register">Pas de compte ?</a>
+
+</mat-card>
+<button mat-raised-button color="warn" (click)="ClickGoogleAuth()">Connexion avec Google</button>
+<button mat-raised-button color="primary" (click)="ClickFacebookAuth()">Connexion avec Facebook</button>
+<button mat-raised-button (click)="ClickTwitterAuth()">Connexion avec Twitter</button>
+</div>

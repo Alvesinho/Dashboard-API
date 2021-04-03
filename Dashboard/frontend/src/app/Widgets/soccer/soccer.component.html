@@ -1,0 +1,21 @@
+<div>
+    <mat-card-title>Football Stats Player</mat-card-title>
+    <form [formGroup]="signinForm" (ngSubmit)="SubmitWeather()">
+    <p>
+    <mat-form-field>
+      <input type="string" matInput placeholder="Player" formControlName="player">
+    </mat-form-field>
+  </p>
+  <div class="button">
+    <button type="submit" mat-button>Get Player Stats</button>
+  </div>
+  <div *ngIf="displayTemp">
+  <p>Name : {{this.resultats[0].player_name}}</p>
+  <p>Country : {{this.resultats[0].player_country}}</p>
+  <p>Post : {{this.resultats[0].player_type}}</p>
+  <p>Age : {{this.resultats[0].player_age}}</p>
+  <p>Team : {{this.resultats[1].team_name}}</p>
+  <p>Match : {{this.resultats[1].player_match_played}}</p>
+  <p>Goals : {{this.resultats[1].player_goals}}</p>
+  </div>
+</form>

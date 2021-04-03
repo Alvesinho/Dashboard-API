@@ -1,0 +1,53 @@
+<div>
+    <mat-card-title>Football Head to Head</mat-card-title>
+    <form [formGroup]="signinForm" (ngSubmit)="SubmitWeather()">
+    <p>
+    <mat-form-field>
+      <input type="string" matInput placeholder="Team" formControlName="TEAM1">
+    </mat-form-field>
+    </p>
+    <p>
+    <mat-form-field>
+        <input type="string" matInput placeholder="Team" formControlName="TEAM2">
+    </mat-form-field>  
+  </p>
+  <div class="button">
+    <button type="submit" mat-button>Get Stats Teams</button>
+  </div>
+  <div *ngIf="displayTemp">
+    <table class="table table-striped">
+      <thead>
+      <tr>
+        <th style="width: 25%">
+          Team Name
+        </th>
+          <th style="width: 25%">
+              Country Name
+          </th>
+          <th style="width: 25%">
+              League Name
+          </th>
+          <th style="width: 25%">
+            Score
+        </th>
+      </tr>
+      </thead>
+      <tbody>     
+      <tr>
+        <td>{{this.resultats.firstTeam_VS_secondTeam[0].match_hometeam_name}}</td>
+        <td>{{this.resultats.firstTeam_VS_secondTeam[0].country_name}}</td>
+        <td>{{this.resultats.firstTeam_VS_secondTeam[0].league_name}}</td>
+        <td>{{this.resultats.firstTeam_VS_secondTeam[0].match_hometeam_score}}</td>
+      </tr>
+
+      <tr>
+        <td>{{this.resultats.firstTeam_VS_secondTeam[0].match_awayteam_name}}</td>
+        <td>{{this.resultats.firstTeam_VS_secondTeam[0].country_name}}</td>
+        <td>{{this.resultats.firstTeam_VS_secondTeam[0].league_name}}</td>
+        <td>{{this.resultats.firstTeam_VS_secondTeam[0].match_awayteam_score}}</td>
+      </tr>
+
+      </tbody>
+    </table>
+  </div>
+</form>
